@@ -1,0 +1,56 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	background-color: white;
+	.brand-logo{
+		color: #bd081c;
+		padding-left: 16px;
+		&:hover{
+			background-color: #efefef;
+			border-radius: 50%;
+		}
+	}
+	.input-field{
+		padding: 6px;
+		input[type="search"]:not(.browser-default){
+			background-color: #efefef;
+			border-radius: 4px;
+			height: 25px;
+			padding: 12px 0;
+			margin: 0;
+		}
+		label{
+			color: #9e9e9e;
+			top: -10px;
+			i{
+				color: #9e9e9e;
+			}
+		}
+		
+		
+	}
+	#nav-mobile{
+		li{
+			a{
+				color: #9e9e9e;
+				font-weight: bold;
+				&:hover{
+					background-color: #efefef;
+					border-radius: 40px;
+				}
+				&.active{
+					color: #717171;
+				}
+			}
+		}
+	}
+}
+/*
+color: #efefef; gris muy claro
+color: #9e9e9e; gris claro
+color: #717171; gris oscuro
+color: #bd081c; rojo logo
+*/
