@@ -6,6 +6,7 @@ body{
 .row .col{
 	padding: 0 0.5rem;
 }
+
 nav{
 	background-color: white;
 	line-height: 40px;
@@ -24,14 +25,6 @@ nav{
 	.brand-logo{
 		color: #bd081c;
 		padding-left: 14px;
-		
-/*
-margin-left: 8px;
-height: 54px;
-padding-left: 12px;
-
-*/
-
 		&:hover{
 			background-color: #efefef;
 			border-radius: 50%;
@@ -103,12 +96,6 @@ section{
 		.card{
 			box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
 			width: 18%;
-			/*
-			display: inline-block;
-			width: 15%;
-			padding: 10px;
-			margin: 20px;
-			*/
 
 			.card-content{
 				.card-title{
@@ -118,13 +105,55 @@ section{
 				}
 				p{
 					font-size: 12px;
+					padding: 5px 0;
 				}
 			}
 		}
 	}
 }
 
+.modal{
+	border-radius: 4px;
+	width: 47%;
 
+	.modal-header{
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 10px;
+		span .fa{
+			color: #9e9e9e;
+			font-size: 24px;
+			padding: 14px;
+		}
+	}
+
+	.modal-content{
+		div{
+			@extend .modal-header;
+			span .fa{
+			font-size: 24px;
+			padding: 14px;
+			}
+		}
+	}
+
+	.modal-footer{
+		text-align: left;
+		padding: 0 30px;
+
+	}
+
+	.modal-btn{
+	color: white;
+	background-color: #bd081c;
+	}
+
+	.modal-btn-read{
+		color: #efefef;
+		background-color: #9e9e9e;
+		font-weight: bold;
+	}
+}
 
 /*
 color: #efefef; gris muy claro
